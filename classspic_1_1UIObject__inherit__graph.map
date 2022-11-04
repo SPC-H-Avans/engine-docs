@@ -1,0 +1,6 @@
+<map id="spic::UIObject" name="spic::UIObject">
+<area shape="rect" id="node1" title="Base class for a user interface object like Button or Text. @spicapi." alt="" coords="119,893,223,971"/>
+<area shape="rect" id="node3" href="$classspic_1_1Button.html" title="Instances of this class are clickable user interface items." alt="" coords="5,1019,185,1125"/>
+<area shape="rect" id="node4" href="$classspic_1_1Text.html" title="Class representing a piece of text which can be rendered. @spicapi." alt="" coords="210,1033,287,1111"/>
+<area shape="rect" id="node2" href="$classspic_1_1GameObject.html" title="Any object which should be represented on screen." alt="" coords="51,5,291,845"/>
+</map>
