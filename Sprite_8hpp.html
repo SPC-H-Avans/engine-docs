@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Platformer Engine: includes/spic-prj-api/Sprite.hpp File Reference</title>
+<title>SPC-H Platformer Engine: includes/spic-prj-api/Sprite.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Platformer Engine
+   <div id="projectname">SPC-H Platformer Engine
    </div>
   </td>
  </tr>
@@ -67,7 +67,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Sprite.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -75,16 +76,29 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="Component_8hpp_source.html">Component.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Color_8hpp_source.html">Color.hpp</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="GraphicsFacade_8hpp_source.html">Facade/GraphicsFacade.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Transform_8hpp_source.html">Transform.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="TextureManager_8hpp_source.html">Texture/TextureManager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Debug_8hpp_source.html">Debug.hpp</a>&quot;</code><br />
+<code>#include &lt;boost/serialization/access.hpp&gt;</code><br />
+<code>#include &lt;boost/serialization/export.hpp&gt;</code><br />
+<code>#include &lt;boost/archive/binary_iarchive.hpp&gt;</code><br />
+<code>#include &lt;boost/archive/binary_oarchive.hpp&gt;</code><br />
+<code>#include &quot;boost/archive/text_iarchive.hpp&quot;</code><br />
+<code>#include &quot;boost/archive/text_oarchive.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="portable__binary__iarchive_8hpp_source.html">Networking/boost/portable_binary_iarchive.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="portable__binary__oarchive_8hpp_source.html">Networking/boost/portable_binary_oarchive.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Rotatable_8hpp_source.html">ComponentExtension/Rotatable.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Sprite.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Sprite_8hpp__incl.svg" width="303" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Sprite_8hpp__incl.svg" width="100%" height="596"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Sprite_8hpp__dep__incl.svg" width="148" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Sprite_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -100,7 +114,51 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacespic"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacespic.html">spic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac282cb1162adbf8a513f25574d27fcf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Sprite_8hpp.html#ac282cb1162adbf8a513f25574d27fcf0">BOOST_SERIALIZATION_ASSUME_ABSTRACT</a> (Sprite)</td></tr>
+<tr class="separator:ac282cb1162adbf8a513f25574d27fcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631569599acdff83c016ea9c68efa8eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Sprite_8hpp.html#a631569599acdff83c016ea9c68efa8eb">BOOST_CLASS_EXPORT_KEY</a> (<a class="el" href="classspic_1_1Sprite.html">spic::Sprite</a>)</td></tr>
+<tr class="separator:a631569599acdff83c016ea9c68efa8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a631569599acdff83c016ea9c68efa8eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631569599acdff83c016ea9c68efa8eb">&#9670;&nbsp;</a></span>BOOST_CLASS_EXPORT_KEY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_CLASS_EXPORT_KEY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classspic_1_1Sprite.html">spic::Sprite</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac282cb1162adbf8a513f25574d27fcf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac282cb1162adbf8a513f25574d27fcf0">&#9670;&nbsp;</a></span>BOOST_SERIALIZATION_ASSUME_ABSTRACT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_SERIALIZATION_ASSUME_ABSTRACT </td>
+          <td>(</td>
+          <td class="paramtype">Sprite&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

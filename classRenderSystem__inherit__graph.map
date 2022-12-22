@@ -1,0 +1,4 @@
+<map id="RenderSystem" name="RenderSystem">
+<area shape="rect" id="node1" title="System that updates the animation of the AnimatedSprite component." alt="" coords="20,145,164,252"/>
+<area shape="rect" id="node2" href="$classISystem.html" title=" " alt="" coords="5,5,179,97"/>
+</map>
